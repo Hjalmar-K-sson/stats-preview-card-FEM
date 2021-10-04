@@ -6,5 +6,32 @@
 
 body {
   height: 100vh;
+  background: #090b1a;
+  font-family: 'Inter', sans-serif;
+}
+
+.banner {
+  background: #1b1938;
+  border-radius: 20px;
+}
+
+.img-col {
+  background-image: url("../public/images/image-header-desktop-jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+}
+
+h1 .accent {
+  font-size: inherit;
+  color: #aa5cdb;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
 }
 /*# sourceMappingURL=style.css.map */
