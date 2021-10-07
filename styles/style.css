@@ -5,11 +5,14 @@
 }
 
 body {
-  width: 100%;
   height: 100vh;
   background: #090b1a;
   font-family: 'Inter', sans-serif;
   color: white;
+}
+
+.container {
+  max-width: 80%;
 }
 
 .banner {
@@ -17,20 +20,47 @@ body {
   border-radius: 10px;
 }
 
-.img-col {
-  background-image: url("https://res.cloudinary.com/doizzlsa5/image/upload/v1633375546/Exercises/stats-preview-card-FEM/image-header-desktop_clzb9c.jpg");
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 0 10px 10px 0;
+.img-div {
+  background-color: #aa5cdb;
 }
 
-h1 {
+@media (min-width: 768px) {
+  .img-div {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-div {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+h3 {
   color: white;
 }
 
-h1 .accent {
+h3 .accent {
   font-size: inherit;
   color: #aa5cdb;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+@media (min-width: 768px) {
+  img {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  img {
+    border-radius: 10px 10px 0 0;
+    height: 80%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

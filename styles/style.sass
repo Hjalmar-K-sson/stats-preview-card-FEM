@@ -14,25 +14,39 @@ $subheading-white: hsla(0, 0%, 100%, 0.6)
     font-size: 15px
 
 body
-    width: 100%
     height: 100vh
     background: $main-bg-blue
     font-family: 'Inter', sans-serif
     color: $heading-white
 
+.container
+    max-width: 80%
+
 .banner
     background: $card-bg-blue
     border-radius: 10px
 
-.img-col
-    background-image: url("https://res.cloudinary.com/doizzlsa5/image/upload/v1633375546/Exercises/stats-preview-card-FEM/image-header-desktop_clzb9c.jpg")
-    background-position: center top
-    background-size: cover
-    background-repeat: no-repeat
-    border-radius: 0 10px 10px 0
+.img-div
+    background-color: $accent-violet
+    @media (min-width: 768px)
+        border-radius: 0 10px 10px 0
 
-h1
+    @media (max-width: 767px)
+        border-radius: 10px 10px 0 0
+
+h3
     color: $heading-white
     .accent
         font-size: inherit
         color: $accent-violet
+
+img
+    width: 100%
+    height: 100%
+    opacity: 0.4
+    @media (min-width: 768px)
+        border-radius: 0 10px 10px 0
+
+    @media (max-width: 767px)
+        border-radius: 10px 10px 0 0
+        height: 80%
