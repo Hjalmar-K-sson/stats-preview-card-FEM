@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap')
 
+$heading-font: 'Lexend Deca', sans-serif
+$paragraph-font: 'Inter', sans-serif
+
 //Colors
 $main-bg-blue: hsl(233, 47%, 7%)
 $card-bg-blue: hsl(244, 38%, 16%)
@@ -16,7 +19,7 @@ $subheading-white: hsla(0, 0%, 100%, 0.6)
 body
     height: 100vh
     background: $main-bg-blue
-    font-family: 'Inter', sans-serif
+    font-family: $heading-font
     color: $heading-white
 
 .container
@@ -25,6 +28,10 @@ body
 .banner
     background: $card-bg-blue
     border-radius: 10px
+    p
+        font-family: $paragraph-font
+        color: $paragraph-white
+        font-size: 1em
 
 .img-div
     background-color: $accent-violet
@@ -50,3 +57,8 @@ img
     @media (max-width: 767px)
         border-radius: 10px 10px 0 0
         height: 80%
+
+.stats
+    p
+        text-transform: uppercase
+        font-size: .8em
